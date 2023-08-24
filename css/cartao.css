@@ -1,0 +1,106 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: white;
+  background-image: url(../img/vermelhofundo.png);
+  font-family: 'Bebas Neue', sans-serif;
+  background-size: cover;
+
+}
+
+.formulario-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  /* Centraliza horizontalmente o título */
+}
+
+.cartao {
+  width: 350px;
+  border-radius: 8px;
+  background-color: #222;
+  box-shadow: 0 5px 9px red;
+  padding: 20px;
+  /* Ajusta o espaçamento interno */
+  margin: auto;
+  /* Centraliza horizontalmente o cartão */
+}
+
+.cabecalho-cartao {
+  background-color: #d00;
+  padding: 16px;
+  text-align: center;
+  color: #fff;
+  font-size: 28px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  width: 100%;
+  transition: background-color 0.3s ease-in-out;
+  /* Adiciona uma transição suave para a mudança de cor */
+}
+
+.cabecalho-cartao:hover {
+  background-color: purple;
+}
+
+.corpo-cartao {
+  width: 100%;
+  margin: 3px;
+}
+
+.grupo-formulario {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.grupo-formulario label {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.grupo-formulario input[type="text"],
+.grupo-formulario input[type="email"],
+.grupo-formulario input[type="number"],
+.grupo-formulario input[type="tel"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  background-color: #333;
+  color: #fff;
+  /* Remova a margem de 10px entre os campos */
+  margin: 0;
+}
+
+.botao {
+  padding: 12px 24px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  background-color: #d00;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.botao:hover {
+  background-color: purple;
+  filter: blur(1px);
+}
+
+.botao1 {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-items: center;
+}
+

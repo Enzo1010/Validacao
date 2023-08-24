@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Clientes</title>
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/cartao.css">
+
+
+</head>
+
+<body>
+  <div class="cartao">
+    <div class="formulario-container">
+      <div class="cabecalho-cartao">Registro de Clientes</div>
+
+      <div class="corpo-cartao">
+        <br>
+        <form action="teste.php">
+          <div class="grupo-formulario">
+            <label for="nome" class="form-label">Nome Completo:</label>
+            <input required type="text" class="campo-formulario" name="nome" id="nome" aria-describedby="helpId"
+              placeholder="Digite seu Nome com Sobrenome">
+            <small id="helpIdnm" class="form-text text-muted"></small>
+          </div>
+
+          <div class="grupo-formulario">
+            <label for="email">E-mail:</label>
+            <input required class="campo-formulario" name="email" id="email" type="text" placeholder="Digite o e-mail">
+            <small id="helpIdem" class="form-text text-muted"></small>
+          </div>
+
+          <div class="grupo-formulario">
+            <label for="idade">Idade:</label>
+            <input required class="campo-formulario" name="idade" id="idade" type="number" min="18" max="120"
+              placeholder="Idade é de 18 até 120!">
+          </div>
+
+          <div class="grupo-formulario">
+            <label for="cpf">CPF:</label>
+            <input required class="campo-formulario" name="cpf" id="cpf" type="text" maxlength="11"
+              placeholder="Digite o cpf">
+            <small id="helpIdcpf" class="form-text text-muted"></small>
+          </div>
+
+          <div class="grupo-formulario">
+            <label for="aniver">Data de Nascimento</label>
+            <input required class="campo-formulario" name="aniver" id="aniver" type="date">
+            <small id="helpIdaniver" class="form-text text-muted"></small>
+          </div>
+
+
+          <div class="grupo-formulario">
+            <label for="cpf">RG:</label>
+            <input required class="campo-formulario" name="RG" id="RG" type="text" maxlength="11"
+              placeholder="Digite o RG">
+            <small id="helpIdRG" class="form-text text-muted"></small>
+          </div>
+
+          <div class="grupo-formulario">
+            <label for="telefone">Telefone:</label>
+            <input required class="campo-formulario" name="telefone" id="telefone" type="tel"
+              placeholder="Digite o telefone com DDD(tudo junto)">
+            <small id="helpIdtele" class="form-text text-muted"></small>
+          </div>
+
+          <div class="botao1">
+            <button type="submit" class="botao" id="Envia">Enviar</button>
+          </div>
+
+          <br>
+
+          <div class="botao1">
+            <button type="button" class="botao" id="validarbtn">Validar</button>
+          </div>
+
+          <br>
+
+          <div class="botao1">
+            <button id="limpar" type="reset" class="botao">Limpar Dados</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+<script type='text/javascript' src="js/script.js"></script>
+
+</html>
